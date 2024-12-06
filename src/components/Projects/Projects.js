@@ -2,12 +2,22 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+// import leaf from "../../Assets/Projects/leaf.png";
+// import emotion from "../../Assets/Projects/emotion.png";
+// import editor from "../../Assets/Projects/codeEditor.png";
+// import chatify from "../../Assets/Projects/chatify.png";
+// import suicide from "../../Assets/Projects/suicide.png";
+// import bitsOfCode from "../../Assets/Projects/blog.png";
+
+import chorely from "../../Assets/Projects/portfolio_project_chorely.png";
+import DTW from "../../Assets/Projects/portfolio_project_DTW.png";
+import forager from "../../Assets/Projects/portfolio_project_forager.png";
+import rightscolab from "../../Assets/Projects/portfolio_project_rights_colab.png";
+import mindgalaxy from "../../Assets/Projects/portfolio_project_mind_galaxy.png";
+import gosaleng from "../../Assets/Projects/portfolio_project_gosaleng.png";
+// import uidesign from "../../Assets/Projects/portfolio_project_UI_design.png";
+
+
 
 function Projects() {
   return (
@@ -23,68 +33,69 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={chorely}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Chorely - Mobile App"
+              description="Chorely is a social task-management mobile app designed to make chore completion and planning a collaborative experience. By blending productivity with social engagement, Chorely helps users stay organized and connected with friends while working on everyday chores and tasks. Built with SwiftUI, Firebase Firestore & Authentication, MapKit, RapidAPI, and Lottie."
+              ghLink="https://github.com/JittisaK11/Chorely"
+              demoLink="https://youtu.be/hylqcaq2NeA"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={DTW}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Extreme Time Warping - Music & Signal Processing Research"
+              description="Dynamic time warping (DTW) is a dynamic programming algorithm used to determine the optimal alignment between two sequences. Conducted as part of the Music Information Retrieval Lab at Harvey Mudd College, this research spans signal processing, computer science, and music. It systematically studies the effect of time warping severity on the performance of DTW and experimentally explores several methods to improve its robustness to varying levels of time warping."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              researchLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={forager}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="FoRAGer - Chatbot Web App"
+              description="foRAGer, a prototype GPT-powered chatbot built as a React app using Tailwind CSS, HTML, and JavaScript. Utilizing Langchain and retrieval-augmented generation (RAG) technology, it allows users to create personalized knowledge bases, upload files, and receive AI-generated responses with transparent source citations. Designed to support students, professionals, and small business owners, foRAGer simplifies the analysis of documents, images, and audio files. Built in collaboration with friends."
+              ghLink="https://github.com/foRAGer-app"
+              demoLink="https://www.youtube.com/watch?v=Fy9q9ehHK34"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={rightscolab}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Human Rights & Data Science Research"
+              description="This post summarizes findings from data science research on the financial materiality of labor rights conducted by Columbia University's Data Science Institute in collaboration with Rights CoLab. As part of this multi-year project, I worked on the Labor Conditions in Supply Chains (LCSC) and DEI team, where we used NLP techniques to analyze and uncover insights into labor rights issues."
+              researchLink="https://rightscolab.org/using-data-science-to-identify-financially-material-human-rights-and-human-capital-metrics-progress-on-proving-the-concept/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={mindgalaxy}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Mind Galaxy - Gamified Mental Health Assessment"
+              description={
+                <span>
+                  Our gamified assessment, <b>Mind Galaxy</b>, aims to increase accessibility to mental health assessments, and encourage regular testing for depression. The program gamifies the mental health assessment Center for Epidemiologic Studies-Depression Scale (CES-D), which is an instrument that allows patients to evaluate their feelings, behavior, and outlook from their previous week. The product—a website built with <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>—won <b>1st place at the Creatica Hackathon</b>.
+                </span>
+              }              
+              ghLink="https://heeyunki-mp3.github.io/mental_health_game/"
+              demoLink="https://devpost.com/software/mind-galaxy"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={gosaleng}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="GoSaleng - National Hackathon Product Pitch"
+              description="Our team developed an idea to connect Saleng (street trash collectors) with recyclers through an accessible mobile app as part of a product ideation competition aimed at helping marginalized groups. We conducted market research, interviewing over 30 Saleng and recycling companies, and pitched our idea and prototype to two rounds of judges. This project won 1st Place Best Impact at Hackathon U League for All, organized by the Digital Economy Promotion Agency (depa) of Thailand in August 2022."
+              demoLink="https://www.youtube.com/watch?v=zUAlGDenMOc"
             />
           </Col>
         </Row>

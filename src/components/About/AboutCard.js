@@ -8,24 +8,24 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Jane (Jittisa) Kraprayoon </span>
+            Hi everyone, my name is <span className="purple">Jane (Jittisa) Kraprayoon.</span>
             <br />
-            I am a senior at Columbia University, majoring in Computer Science at The Fu Foundation School of Engineering and Applied Science.
+            I am a senior at <span className="purple">Columbia University (The Fu Foundation School of Engineering and Applied Science)</span>, majoring in <span className="purple">Computer Science</span>.
             <br />
-            I am passionate about software engineering, machine learning, and creating inclusive tech communities.
+            I am passionate about software engineering, machine learning, and creating inclusive tech communities. At Columbia, I help lead <a href="https://adicu.com" target="_blank" rel="noopener noreferrer" style={{ color: 'lightblue' }}>ADI</a>, the largest tech club on campus.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Teaching
+              <ImPointRight /> Teaching 📚 (I work as a teaching assistant for AI and Discrete Mathematics and as a volunteer tutor) 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Playing Soccer
+              <ImPointRight /> Playing Soccer ⚽️ (kicking it with Columbia Women's Club Soccer)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Singing and Music
+              <ImPointRight /> Music 🎤🎸🎷 (I kind of just sing in my room)
             </li>
           </ul>
 
