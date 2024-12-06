@@ -42,7 +42,7 @@ function Projects() {
               imgPath={DTW}
               isBlog={false}
               title="Extreme Time Warping - Music & Signal Processing Research"
-              description="NSF-funded research conducted as part of the Music Information Retrieval Lab at Harvey Mudd College, this research spans signal processing, computer science, and music. Results were published in the Applied Sciences journal: “Improving the Robustness of DTW to Global Time Warping Conditions in Audio Synchronization."
+              description='NSF-funded research conducted as part of the Music Information Retrieval Lab at Harvey Mudd College, this research spans signal processing, computer science, and music. Results were published in the Applied Sciences journal: "Improving the Robustness of DTW to Global Time Warping Conditions in Audio Synchronization."'
               ghLink="https://github.com/HMC-MIR/ExtremeTimeWarping"
               researchLink="https://www.mdpi.com/2076-3417/14/4/1459"
             />
