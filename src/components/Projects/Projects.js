@@ -9,6 +9,7 @@ import forager from "../../Assets/Projects/portfolio_project_forager.png";
 import rightscolab from "../../Assets/Projects/portfolio_project_rights_colab.png";
 import mindgalaxy from "../../Assets/Projects/portfolio_project_mind_galaxy.png";
 import gosaleng from "../../Assets/Projects/portfolio_project_gosaleng.png";
+import emoji from "../../Assets/Projects/portfolio_project_emoji.png";
 // import uidesign from "../../Assets/Projects/portfolio_project_UI_design.png";
 
 
@@ -24,13 +25,13 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "left", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chorely}
               isBlog={false}
               title="Chorely - Mobile App"
-              description="Chorely is a social task-management mobile app designed to make chore completion and planning a collaborative experience. By blending productivity with social engagement, Chorely helps users stay organized and connected with friends while working on everyday chores and tasks. Built with SwiftUI, Firebase Firestore & Authentication, MapKit, RapidAPI, and Lottie."
+              description="Chorely is a social task-management mobile app designed to make chore completion and planning a collaborative experience. We used SwiftUI, Firebase Firestore & Authentication, MapKit, RapidAPI, and Lottie. Built in collaboration with friends."
               ghLink="https://github.com/JittisaK11/Chorely"
               demoLink="https://youtu.be/hylqcaq2NeA"
             />
@@ -41,7 +42,7 @@ function Projects() {
               imgPath={DTW}
               isBlog={false}
               title="Extreme Time Warping - Music & Signal Processing Research"
-              description="Dynamic time warping (DTW) is a dynamic programming algorithm used to determine the optimal alignment between two sequences. Conducted as part of the Music Information Retrieval Lab at Harvey Mudd College, this research spans signal processing, computer science, and music. It systematically studies the effect of time warping severity on the performance of DTW and experimentally explores several methods to improve its robustness to varying levels of time warping."
+              description="NSF-funded research conducted as part of the Music Information Retrieval Lab at Harvey Mudd College, this research spans signal processing, computer science, and music. Results were published in the Applied Sciences journal: “Improving the Robustness of DTW to Global Time Warping Conditions in Audio Synchronization."
               ghLink="https://github.com/HMC-MIR/ExtremeTimeWarping"
               researchLink="https://www.mdpi.com/2076-3417/14/4/1459"
             />
@@ -52,7 +53,7 @@ function Projects() {
               imgPath={forager}
               isBlog={false}
               title="FoRAGer - Chatbot Web App"
-              description="foRAGer, a prototype GPT-powered chatbot built as a React app using Tailwind CSS, HTML, and JavaScript. Utilizing Langchain and retrieval-augmented generation (RAG) technology, it allows users to create personalized knowledge bases, upload files, and receive AI-generated responses with transparent source citations. Designed to support students, professionals, and small business owners, foRAGer simplifies the analysis of documents, images, and audio files. Built in collaboration with friends."
+              description="FoRAGer is a prototype GPT-powered chatbot built as a React app using Tailwind CSS, HTML, and JavaScript. Utilizing Langchain and retrieval-augmented generation (RAG) technology, it allows users to create personalized knowledge bases, upload files, and receive AI-generated responses with transparent source citations. Built in collaboration with friends."
               ghLink="https://github.com/foRAGer-app"
               demoLink="https://www.youtube.com/watch?v=Fy9q9ehHK34"              
             />
@@ -63,8 +64,19 @@ function Projects() {
               imgPath={rightscolab}
               isBlog={false}
               title="Human Rights & Data Science Research"
-              description="This post summarizes findings from data science research on the financial materiality of labor rights conducted by Columbia University's Data Science Institute in collaboration with Rights CoLab. As part of this multi-year project, I worked on the Labor Conditions in Supply Chains (LCSC) and DEI team, where we used NLP techniques to analyze and uncover insights into labor rights issues."
+              description="As part of the Data for Good Scholars Program at Columbia University’s Data Science Institute, I conducted data science research on corporate practices and human rights violations using natural language processing (NLP). Under the guidance of human rights experts—Joanne R. Bauer and Paul Rissman—at Rights CoLab, I contributed to the Labor Conditions in Supply Chains (LCSC) and Diversity, Equity, and Inclusion (DEI) teams."
               researchLink="https://rightscolab.org/using-data-science-to-identify-financially-material-human-rights-and-human-capital-metrics-progress-on-proving-the-concept/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emoji}
+              isBlog={false}
+              title="Emoji Research 😝 - Using ML & NLP"
+              description="Research conducted in the High-Level Vision Lab at Columbia University. Under the guidance of Professor John Kender, this research contributes to cross-cultural multimedia analysis as part of an NSF IIS-funded project. We applied machine learning and natural language processing techniques to analyze emoji usage across diverse cultural groups in the context of the 2022 World Cup, providing insights into cross-cultural communication patterns."
+              ghLink="https://github.com/yuhsin-huang/EmojiResearch-WorldCup2022"
+              researchLink="https://www.cs.columbia.edu/~jrk/NSFgrants/videoaffinity/Interim/23x_Cindy_Jane.pdf"
             />
           </Col>
 
@@ -72,10 +84,10 @@ function Projects() {
             <ProjectCard
               imgPath={mindgalaxy}
               isBlog={false}
-              title="Mind Galaxy - Gamified Mental Health Assessment"
+              title="Mind Galaxy - Creatica Hackathon"
               description={
                 <span>
-                  Our gamified assessment, <b>Mind Galaxy</b>, aims to increase accessibility to mental health assessments, and encourage regular testing for depression. The program gamifies the mental health assessment Center for Epidemiologic Studies-Depression Scale (CES-D), which is an instrument that allows patients to evaluate their feelings, behavior, and outlook from their previous week. The product—a website built with HTML, CSS, and JavaScript—won 1st place at the Creatica Hackathon.
+                  Our gamified assessment, Mind Galaxy, aims to increase accessibility to mental health assessments, and encourage regular testing for depression. The program gamifies the mental health assessment Center for Epidemiologic Studies-Depression Scale (CES-D). The product—a website built with HTML, CSS, and JavaScript—won 1st place at the Creatica Hackathon.
                 </span>
               }              
               ghLink="https://heeyunki-mp3.github.io/mental_health_game/"
@@ -87,8 +99,8 @@ function Projects() {
             <ProjectCard
               imgPath={gosaleng}
               isBlog={false}
-              title="GoSaleng - National Hackathon Product Pitch"
-              description="Our team developed an idea to connect Saleng (street trash collectors) with recyclers through an accessible mobile app as part of a product ideation competition aimed at helping marginalized groups. We conducted market research, interviewing over 30 Saleng and recycling companies, and pitched our idea and prototype to two rounds of judges. This project won 1st Place Best Impact at Hackathon U League for All, organized by the Digital Economy Promotion Agency (depa) of Thailand in August 2022."
+              title="GoSaleng - Thailand National Hackathon"
+              description="Our team developed an idea to connect Saleng (street trash collectors) with recyclers through an accessible mobile app as part of a product ideation competition aimed at helping marginalized groups. This project won 1st Place at a National Hackathon organized by the Digital Economy Promotion Agency (DEPA) of Thailand."
               demoLink="https://www.youtube.com/watch?v=zUAlGDenMOc"
             />
           </Col>

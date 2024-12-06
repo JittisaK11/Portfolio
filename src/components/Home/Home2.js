@@ -18,7 +18,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m <span className="purple">Jittisa Kraprayoon</span>, a senior at The Fu Foundation School of Engineering and Applied Science at <span className="purple">Columbia University</span>, majoring in <span className="purple">Computer Science</span>. 
+              I’m <span className="purple">Jane Kraprayoon</span>, a senior at The Fu Foundation School of Engineering and Applied Science at <span className="purple">Columbia University</span>, majoring in <span className="purple">Computer Science</span>. 
               <br />
               <br />I have experience working with technologies like
               <i>

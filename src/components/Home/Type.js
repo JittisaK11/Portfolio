@@ -8,8 +8,8 @@ function Type() {
         strings: [
           "Software Developer",
           "Data Science Enthusiast",
-          "Machine Learning Research Assistant",
-          "Student",
+          "AI/ML Research Assistant",
+          "Computer Science Student",
         ],
         autoStart: true,
         loop: true,
