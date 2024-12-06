@@ -2,12 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import leaf from "../../Assets/Projects/leaf.png";
-// import emotion from "../../Assets/Projects/emotion.png";
-// import editor from "../../Assets/Projects/codeEditor.png";
-// import chatify from "../../Assets/Projects/chatify.png";
-// import suicide from "../../Assets/Projects/suicide.png";
-// import bitsOfCode from "../../Assets/Projects/blog.png";
 
 import chorely from "../../Assets/Projects/portfolio_project_chorely.png";
 import DTW from "../../Assets/Projects/portfolio_project_DTW.png";
@@ -48,8 +42,8 @@ function Projects() {
               isBlog={false}
               title="Extreme Time Warping - Music & Signal Processing Research"
               description="Dynamic time warping (DTW) is a dynamic programming algorithm used to determine the optimal alignment between two sequences. Conducted as part of the Music Information Retrieval Lab at Harvey Mudd College, this research spans signal processing, computer science, and music. It systematically studies the effect of time warping severity on the performance of DTW and experimentally explores several methods to improve its robustness to varying levels of time warping."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              researchLink="https://blogs.soumya-jit.tech/"
+              ghLink="https://github.com/HMC-MIR/ExtremeTimeWarping"
+              researchLink="https://www.mdpi.com/2076-3417/14/4/1459"
             />
           </Col>
 
@@ -81,7 +75,7 @@ function Projects() {
               title="Mind Galaxy - Gamified Mental Health Assessment"
               description={
                 <span>
-                  Our gamified assessment, <b>Mind Galaxy</b>, aims to increase accessibility to mental health assessments, and encourage regular testing for depression. The program gamifies the mental health assessment Center for Epidemiologic Studies-Depression Scale (CES-D), which is an instrument that allows patients to evaluate their feelings, behavior, and outlook from their previous week. The product—a website built with <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>—won <b>1st place at the Creatica Hackathon</b>.
+                  Our gamified assessment, <b>Mind Galaxy</b>, aims to increase accessibility to mental health assessments, and encourage regular testing for depression. The program gamifies the mental health assessment Center for Epidemiologic Studies-Depression Scale (CES-D), which is an instrument that allows patients to evaluate their feelings, behavior, and outlook from their previous week. The product—a website built with HTML, CSS, and JavaScript—won 1st place at the Creatica Hackathon.
                 </span>
               }              
               ghLink="https://heeyunki-mp3.github.io/mental_health_game/"
