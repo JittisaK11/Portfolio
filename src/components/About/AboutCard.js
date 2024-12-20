@@ -27,7 +27,7 @@ function AboutCard() {
               <ImPointRight /> Playing Soccer ⚽️ (kicking it with Columbia Women's Club Soccer)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Music 🎤🎸🎷 (I kind of just sing in my room)
+              <ImPointRight /> Music 🎤🎸🎷
             </li>
           </ul>
 
