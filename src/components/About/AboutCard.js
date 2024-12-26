@@ -7,7 +7,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "left" }}>
             Hi everyone, my name is <span className="purple">Jane (Jittisa) Kraprayoon.</span>
             <br />
             I am passionate about software engineering, machine learning, and creating inclusive tech communities. I am also interested in research, startups, and entrepreneurship. At Columbia, I help lead <a href="https://adicu.com" target="_blank" rel="noopener noreferrer" style={{ color: 'lightblue' }}>ADI</a>, the largest tech club on campus.
